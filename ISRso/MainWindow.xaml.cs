@@ -24,5 +24,10 @@ namespace ISRso
         {
             InitializeComponent();
         }
+
+        private void BtnRegistration_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
