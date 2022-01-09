@@ -8,15 +8,40 @@
         Title="ІС РСО  v.0.0.1" Height="700" Width="900">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
             <RowDefinition Height="20*"/>
             <RowDefinition Height="75*"/>
             <RowDefinition Height="5*"/>  
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0">
-            <Button Name="btnRegistration" Content="1. Реєстрація вхідного документа" Height="25" Margin="5" Click="BtnRegistration_Click"/>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_Файл">
+                    <MenuItem Header="_Відкрити файл БД"/>
+                    <MenuItem Header="_Закрити файл БД"/>
+                    <MenuItem Header="_Резерне копіювання БД"/>
+                    <MenuItem Header="_Налаштування"/>
+                    <MenuItem Header="Ви_хід"/>
+
+                </MenuItem>
+                <MenuItem Header="_Дії">
+                    <MenuItem Header="_Реєстрація вх.док."/>
+                </MenuItem>
+                <MenuItem Header="До_відники">
+                    <MenuItem Header="_Типи документів"/>
+                    <MenuItem Header="_Грифи документів"/>
+                    <MenuItem Header="_Організації"/>
+                    <MenuItem Header="_Номера ЄРДР"/>
+                    <MenuItem Header="_Архів ЄРДР"/>
+
+                </MenuItem>
+            </Menu>
+            <StackPanel></StackPanel>
+        </DockPanel>
+        <StackPanel Grid.Row="1">
+            <Button Name="btnRegistration" Content="1. Реєстрація вхідного документа" Height="25" Margin="5" Click="BtnRegistration_Click" />
         </StackPanel>
-        <DataGrid   Margin="5" Grid.Row="1" />
-        <StatusBar Grid.Row="2" MinHeight="25" MaxHeight="25" VerticalAlignment="Bottom"/>
+        <DataGrid   Margin="5" Grid.Row="2" />
+        <StatusBar Grid.Row="3" MinHeight="25" MaxHeight="25" VerticalAlignment="Bottom"/>
 
 
     </Grid>
