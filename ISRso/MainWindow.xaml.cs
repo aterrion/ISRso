@@ -22,6 +22,8 @@ namespace ISRso
     {
         public MainWindow()
         {
+            //Settings.Instance.Save();
+            Settings.Instance.Load();
             InitializeComponent();
         }
 
